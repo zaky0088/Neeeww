@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOC PRO</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>⚡ NOC MONITORING PRO</h2>
+  <div class="status">● Network Normal</div>
+</header>
+
+<div class="container">
+
+<!-- FORM -->
+<div class="form">
+  <input id="jalur" placeholder="Nama Jalur">
+  <input id="odp" placeholder="ODP">
+  <input id="core" type="number" placeholder="Core">
+  <input id="pot" type="number" placeholder="Pot">
+
+  <select id="status">
+    <option>Active</option>
+    <option>Maintenance</option>
+  </select>
+
+  <button onclick="tambahData()">+ Tambah</button>
+</div>
+
+<!-- CARD -->
+<div class="cards">
+  <div class="card glow">
+    Total Jalur
+    <span id="totalJalur">0</span>
+  </div>
+
+  <div class="card glow">
+    Total Core
+    <span id="totalCore">0</span>
+  </div>
+
+  <div class="card red glow">
+    Jalur Putus
+    <span id="jalurPutus">0</span>
+  </div>
+</div>
+
+<input id="search" placeholder="🔍 Cari data..." onkeyup="cari()">
+
+<table>
+<thead>
+<tr>
+<th>No</th>
+<th>Jalur</th>
+<th>ODP</th>
+<th>Core</th>
+<th>Pot</th>
+<th>Status</th>
+<th>Aksi</th>
+</tr>
+</thead>
+
+<tbody id="tabel"></tbody>
+</table>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
