@@ -47,10 +47,13 @@ function render() {
     if (d.status === "Maintenance") jalurPutus++;
 
     tabel.innerHTML += `
-    <tr>
-      <td>${i+1}</td>
-      <td>${d.jalur}</td>
-      <td>${d.odp}</td>
+    <td>
+  <input class="line-input" value="${d.jalur}" readonly>
+</td>
+
+<td>
+  <input class="line-input" value="${d.odp}" readonly>
+</td>
       <td>
         <span class="core-badge" style="background:${getCoreColor(d.core)}; color:${d.core==6?'black':'white'}">
           ${d.core}
