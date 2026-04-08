@@ -1,0 +1,81 @@
+body {
+  background: #0a0f1f;
+  color: white;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #111a2e;
+}
+
+.status {
+  color: #00ff88;
+}
+
+.container {
+  padding: 20px;
+}
+
+.form input, .form select {
+  padding: 10px;
+  margin: 5px;
+  background: #1c2740;
+  border: none;
+  color: white;
+}
+
+button {
+  background: #00c853;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  background: #13203a;
+  text-align: center;
+}
+
+.red {
+  background: #8b0000;
+}
+
+.glow {
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+.core-badge {
+  padding: 5px 10px;
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+.active {
+  color: #00ff88;
+}
+
+.maintenance {
+  color: orange;
+}
